@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nuestros recuerdos 💙</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+
+            background:
+                radial-gradient(circle at top, #14245c, #050816 75%);
+
+            color: white;
+            padding: 50px 20px;
+        }
+
+        /* TÍTULO */
+
+        .encabezado {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .mini {
+            color: #00bfff;
+            letter-spacing: 5px;
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 50px;
+
+            text-shadow:
+                0 0 10px #00bfff,
+                0 0 25px #00bfff;
+        }
+
+        .subtitulo {
+            color: #b9c7e5;
+            margin-top: 15px;
+        }
+
+
+        /* CONTENEDOR DE RECUERDOS */
+
+        .recuerdos {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+
+        /* TARJETA */
+
+        .recuerdo {
+            display: flex;
+            align-items: center;
+            gap: 35px;
+
+            padding: 25px;
+
+            background: rgba(10, 20, 50, 0.8);
+
+            border: 1px solid rgba(0, 191, 255, .5);
+
+            border-radius: 25px;
+
+            box-shadow:
+                0 0 15px rgba(0, 191, 255, .15);
+
+            transition: .3s;
+        }
+
+        .recuerdo:hover {
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 0 20px rgba(0, 191, 255, .4);
+        }
+
+
+        /* FOTO */
+
+        .recuerdo img {
+            width: 320px;
+            height: 240px;
+
+            object-fit: cover;
+
+            border-radius: 18px;
+
+            border: 2px solid #00bfff;
+
+            box-shadow:
+                0 0 15px rgba(0, 191, 255, .3);
+        }
+
+
+        /* TEXTO */
+
+        .texto {
+            flex: 1;
+        }
+
+        .numero {
+            color: #00bfff;
+            font-size: 13px;
+            letter-spacing: 3px;
+        }
+
+        .texto h2 {
+            font-size: 30px;
+            margin: 10px 0;
+
+            color: #00bfff;
+        }
+
+        .texto p {
+            color: #c3cee3;
+            line-height: 1.8;
+            font-size: 15px;
+        }
+
+
+        /* TARJETAS ALTERNADAS */
+
+        .recuerdo:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+
+        /* BOTÓN */
+
+        .volver {
+            display: block;
+
+            margin: 50px auto 0;
+
+            padding: 13px 25px;
+
+            border: 1px solid #00bfff;
+
+            border-radius: 30px;
+
+            background: transparent;
+
+            color: #00bfff;
+
+            cursor: pointer;
+
+            transition: .3s;
+        }
+
+        .volver:hover {
+            background: #00bfff;
+            color: #050816;
+
+            box-shadow:
+                0 0 20px #00bfff;
+        }
+
+
+        /* CELULAR */
+
+        @media (max-width: 750px) {
+
+            h1 {
+                font-size: 38px;
+            }
+
+            .recuerdo,
+            .recuerdo:nth-child(even) {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .recuerdo img {
+                width: 100%;
+                height: 260px;
+            }
+
+            .texto h2 {
+                font-size: 25px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ENCABEZADO -->
+
+    <header class="encabezado">
+
+        <h1>
+            Nuestros recuerdos 💙
+        </h1>
+
+        <p class="subtitulo">
+            Algunos momentos que quiero guardar para siempre.
+        </p>
+
+    </header>
+
+
+
+    <!-- RECUERDOS -->
+
+    <section class="recuerdos">
+
+
+        <!-- RECUERDO 1 -->
+
+        <article class="recuerdo">
+
+            <img src="img/foto1.jpeg" alt="Nuestro recuerdo">
+
+            <div class="texto">
+
+                <span class="numero">
+                    RECUERDO 01
+                </span>
+
+                <h2>
+                    Nuestro primer recuerdo
+                </h2>
+
+                <p>
+                   La primera vez que te vi, caminando hacia mi con tu patineta
+                   en las manos y como siempre tus audifonos puestos. Aun me 
+                   acuerdo de lo guapo que te veias y lo nervisa que estaba 
+                   ese maravilloso dia💙.
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- RECUERDO 2 -->
+
+        <article class="recuerdo">
+
+            <img src="img/foto2.jpeg" alt="Nuestro recuerdo">
+
+            <div class="texto">
+
+                <span class="numero">
+                    RECUERDO 02
+                </span>
+
+                <h2>
+                    Un día especial
+                </h2>
+
+                <p>
+                    El cumpleaños en el cual no estuve como tal presente 
+                    pero estaba ya contigo. El hecho de pasar tantos 
+                    momentos contigo me ponen  muy feliz por estar a tu 
+                    lado en un 2do cumpleaños.
+                </p>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- RECUERDO 3 -->
+
+        <article class="recuerdo">
+
+            <img src="img/foto3.jpeg" alt="Nuestro recuerdo">
+
+            <div class="texto">
+
+                <span class="numero">
+                    RECUERDO 03
+                </span>
+
+                <h2>
+                    Ese momento ❤️
+                </h2>
+
+                <p>
+                   Ese momento donde te vi llegar a mi casa con ese ramo
+                   de flores, Jamas lo olvidare. Siempre que te vi con 
+                   flores viniendo hacia mi me ponia tan nervisa que 
+                   sentia que se me iba a salir el corazon.
+                </p>
+
+            </div>
+
+        </article>
+
+        </article>
+
+
+    </section>
+
+
+
+    <!-- BOTÓN PARA REGRESAR -->
+
+    <button class="volver" onclick="location.href='sorpresa.html'">
+
+        ← Volver a los regalos
+
+    </button>
+
+
+</body>
+
+</html>

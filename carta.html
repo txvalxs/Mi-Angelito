@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Una carta para ti 💙</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background:
+                radial-gradient(circle at top, #003b5c, #00111f 70%);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 15px;
+            overflow-x: hidden;
+        }
+
+        .corazon {
+            position: fixed;
+            color: #00bfff;
+            font-size: 25px;
+            animation: flotar 6s linear infinite;
+            opacity: 0.7;
+            z-index: 0;
+        }
+
+        .c1 { left: 10%; animation-delay: 0s; }
+        .c2 { left: 30%; animation-delay: 2s; }
+        .c3 { left: 55%; animation-delay: 1s; }
+        .c4 { left: 80%; animation-delay: 3s; }
+
+        @keyframes flotar {
+            0% {
+                bottom: -50px;
+                transform: translateX(0);
+                opacity: 0;
+            }
+
+            30% {
+                opacity: 0.8;
+            }
+
+            100% {
+                bottom: 110%;
+                transform: translateX(40px);
+                opacity: 0;
+            }
+        }
+
+        .carta {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 750px;
+            background: rgba(0, 15, 30, 0.90);
+            border: 2px solid #00bfff;
+            border-radius: 25px;
+            padding: 40px;
+            box-shadow:
+                0 0 15px #00bfff,
+                0 0 40px rgba(0, 191, 255, 0.4);
+        }
+
+        h1 {
+            text-align: center;
+            color: #00bfff;
+            text-shadow: 0 0 15px #00bfff;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+        .saludo {
+            font-size: 21px;
+            color: #7ddfff;
+            margin-bottom: 20px;
+        }
+
+        .texto {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #eeeeee;
+        }
+
+        .firma {
+            text-align: right;
+            margin-top: 35px;
+            font-size: 20px;
+            color: #00bfff;
+            font-style: italic;
+        }
+
+        .boton {
+            display: block;
+            width: fit-content;
+            margin: 35px auto 0;
+            padding: 13px 25px;
+            border: 2px solid #00bfff;
+            border-radius: 30px;
+            background: transparent;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .boton:hover {
+            background: #00bfff;
+            color: #00111f;
+            box-shadow: 0 0 20px #00bfff;
+        }
+
+        @media (max-width: 600px) {
+            .carta {
+                padding: 25px 20px;
+            }
+
+            h1 {
+                font-size: 27px;
+            }
+
+            .texto {
+                font-size: 16px;
+                line-height: 1.7;
+            }
+
+            .saludo {
+                font-size: 19px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Corazones flotando -->
+    <div class="corazon c1">💙</div>
+    <div class="corazon c2">♡</div>
+    <div class="corazon c3">💙</div>
+    <div class="corazon c4">♡</div>
+
+    <div class="carta">
+
+        <h1>💌 Una carta para ti</h1>
+
+        <div class="saludo">
+            Para mi niño bonito 💙
+        </div>
+
+        <div class="texto">
+
+            <!-- ESCRIBE TU CARTA AQUÍ -->
+
+            <p>
+                Feliz cumpleaños para el amor de mi vida y el hombre 
+                de mis sueños y de mi vida.
+            </p>
+            <p>
+                Quería hacerte esta pequeña sorpresa porque hoy en 
+                un dia especial para ti mi amor, Espero que te la 
+                pases muy bien en tu dia.
+            </p>
+
+            <p>
+                Gracias por todos los momentos que hemos compartido,
+                por las risas, por las conversaciones y por cada recuerdo
+                que hemos ido creando juntos.
+            </p>
+
+            <p>
+                Me gusta poder compartir tantas cosas contigo y guardar
+                momentos que siempre voy a recordar con mucho cariño.
+            </p>
+
+            <p>
+                Espero que esta pequeña página te recuerde lo importante
+                que eres para mí y todo el cariño que te tengo. 💙
+            </p>
+
+            <p>
+                Te amo muchísimo y espero que podamos seguir creando
+                muchos recuerdos juntos.
+            </p>
+
+        </div>
+
+        <div class="firma">
+            Con mucho cariño,<br>
+            Tu niña 💙
+        </div>
+
+        <a href="sorpresa.html" class="boton">
+            ← Volver
+        </a>
+
+    </div>
+
+</body>
+</html>
